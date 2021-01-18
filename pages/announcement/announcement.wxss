@@ -1,4 +1,4 @@
-.information{
+.information,.message-board{
   background: #fff;
   border-radius: 20rpx;
   margin:20rpx 30rpx;
@@ -23,12 +23,15 @@
 .information .more{
   color: #A3A2A2;
 }
-.main-title{
+.main-title,.message-board-title{
   color:#443C38;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:50rpx 0 0 0;
+  padding:30rpx 0 0 0;
+}
+.message-board-title{
+  padding-top: 0;
 }
 .main-title .left{
   text-align: left;
@@ -67,4 +70,57 @@
 .news-list-right image{
   border-radius: 20rpx;
   height: 100%;
+}
+.msg-item{
+  padding: 20rpx 0;
+}
+.user-msg{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.user-img{
+  width: 110rpx;
+  height: 110rpx;
+  margin-right: 20rpx;
+}
+.user-img image{
+  height: 100%;
+  border-radius: 50%;
+}
+.name{
+  color:#443C38;
+}
+.floor{
+  color: #A6A6A7;
+}
+.msg-text{
+  color: #464444;
+  padding:20rpx 0;
+}
+.msg-img{
+  display: flex;
+  flex-wrap:wrap;
+}
+.imgs{
+  width: 30%;
+  margin-right: 3%;
+}
+.imgs image{
+  border-radius: 20rpx;
+}
+.msg-main .bottom{
+  display: flex;justify-content: center;align-items: center;
+  padding: 30rpx 0 0 0 ;
+}
+.msg-main .left{
+  color: #A6A6A7;
+  flex: 1;
+}
+.right{
+  text-align: right;
+  flex: 1;
+  /* display: flex; */
+  /* justify-content: right;
+  align-items: right; */
 }

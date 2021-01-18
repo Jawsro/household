@@ -5,10 +5,14 @@
     <text>注册/登录</text>
   </view>
   <view class="classification">
-    <view class="classification-item" wx:for="{{classification}}" wx:key='index'>
+    <navigator 
+      class="classification-item" 
+      wx:for="{{classification}}" 
+      wx:key='index'
+      url="{{item.url}}">
       <view class="classification-item-img iconfont {{item.icon}}"></view>
       <view class="classification-item-text font-16">{{item.text}}</view>
-    </view>
+    </navigator>
   </view>
   <view class="grid">
     <view class="grid-item" wx:for="{{grid}}" wx:key='index'>

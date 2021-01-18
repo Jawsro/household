@@ -52,19 +52,23 @@ Page({
     classification:[
       {
         icon:"icon-wuyefeiyongchuzhang",
-        text:"物业缴费"
+        text:"物业缴费",
+        url:"../announcement/announcement"
       },
       {
         icon:"icon-gonggao",
-        text:"社区公告"
+        text:"社区公告",
+        url:"../announcement/announcement"
       },
       {
-        icon:"icon-wuyefeiyongchuzhang",
-        text:"智能开锁"
+        icon:"icon-yuechi",
+        text:"智能开锁",
+        url:"../announcement/announcement"
       },
       {
         icon:"icon-fangkeshuxing",
-        text:"访客同行"
+        text:"访客通行",
+        url:"../announcement/announcement"
       }
     ]
   },

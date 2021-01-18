@@ -1,0 +1,89 @@
+/* .container{
+  padding: 40rpx 30rpx;
+} */
+.article{
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 40rpx 30rpx;
+}
+.mag{
+  display: flex;
+  padding-top: 20rpx;
+  color: #717171;
+}
+.left{
+  flex: 1;
+}
+.right{
+  flex: 1;
+  text-align: right;
+}
+.margin-right{
+  margin-right: 10rpx;
+}
+.author{
+  padding:30rpx 0;
+}
+.zan{
+  text-align: center;
+  padding: 60rpx 0 40rpx;
+}
+.dianzan{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  box-shadow: 0 4rpx 8rpx -1rpx rgba(0,0,0,0.3);
+  margin: 0 auto;
+  position: relative;
+  line-height: 120rpx;
+}
+.zan-num{
+  position: absolute;
+  top:-52rpx;
+  left:90rpx;
+}
+.icon{
+  font-size: 60rpx;
+}
+.nocolor{
+  color:#A6A6A7;
+}
+.iscolor{
+  color:#FD526C ;
+}
+.zan-text{
+  padding-top: 20rpx;
+}
+.recommend{
+  background-color: #fff;
+  padding: 40rpx 30rpx;
+}
+.news-list{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #EBEBEB;
+  padding:40rpx 0 ;
+}
+.news-list-right{
+  width: 360rpx;
+  height: 140rpx;
+}
+.news-list-left{
+  padding-right:60rpx;
+  position: relative;
+}
+.news-title {
+  color:#000;
+}
+.time{
+  color:#A6A6A7;
+  position: absolute;
+  bottom: 0;
+}
+.date{
+  margin-right: 40rpx;
+}
+.news-list-right image{
+  border-radius: 20rpx;
+  height: 100%;
+}

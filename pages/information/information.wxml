@@ -1,0 +1,61 @@
+<view class='container'>
+  <view class="article">
+     <view class="top">
+      <view class="title font-weight-600 font-20">
+        <text>物业公告信息</text>
+      </view>
+      <view class="mag font-14">
+        <view class="left">
+          <text class="margin-right">6.3万阅读</text>
+          <text>2020-12-07</text>
+        </view>
+        <view class="right">
+          <text class="margin-right">约6万字</text>
+          <text>阅读需6分钟</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="author font-16 font-weight-500">
+      <text>文|清风</text>
+    </view>
+
+    <view class="main font-16 font-weight-500">
+        <view>凡本小区居住业主，平等享受小区公共资源，依法公平合理的缴纳物业管理费用，水电费等各项公共资源共享费用。</view>
+        <view>①为了小区业主居住环境的洁净，不随地吐痰，不随便乱扔垃圾，做到存放有序。②车辆管理:为了安全起见，也接收业主的意见与建议:对车辆管理加强力度，非蓝牙注册车辆不得进入本小区，未升级入册车辆及时到物业办理相关手续。坚决杜绝外来人员车辆乱停乱放在本小区。业主停靠车辆应当不影响交通，不堵占非自己车库门为了安全起见，车辆出入小区自觉速度放缓,不大声鸣笛，按照小区指示牌出进。</view>
+    </view>
+
+    <view class="zan">
+      <view class="dianzan" bindtap="dianzan">
+        <text class="iconfont {{zanIsShow ? 'icon-dianzan1' : 'icon-dianzan'}} {{zanIsShow ? 'iscolor' : 'nocolor'}} icon" ></text>
+        <text class="zan-num {{zanIsShow ? 'iscolor' : 'nocolor'}}" >{{zanNum}}</text>
+      </view>
+      <view class="zan-text font-14">
+        <text>点赞，写的不错</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="recommend">
+    <view class="recommern-title font-weight-600 font-16">
+      <text>相关推荐</text>
+    </view>
+     <view class="news">
+        <view class="news-list">
+          <view class="news-list-left ">
+            <view class="news-title font-14">
+              <text>#小区福利#凡本月预存下月物业费前10名奖励食用油一桶！</text>
+            </view>
+            <view class="time font-12">
+              <text class="margin-right">民乐财经</text>
+              <text class="margin-right">2.4千阅读</text>
+              <text class="margin-right">35赞</text>
+            </view>
+          </view>
+          <view class="news-list-right">
+            <image src="../../images/timg.jpg"></image>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>
