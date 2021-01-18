@@ -1,0 +1,4 @@
+<!--pages/shop/shop.wxml-->
+<view class="container">
+<view class="text">该功能尚未开放</view>
+</view>

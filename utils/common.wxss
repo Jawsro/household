@@ -1,0 +1,45 @@
+.font-weight-500{
+  font-weight:550;
+}
+.font-weight-600{
+  font-weight: 600;
+}
+.font-12{
+  font-size: 24rpx;
+}
+.font-14{
+  font-size: 28rpx;
+}
+.font-16{
+  font-size: 32rpx;
+}
+.font-18{
+  font-size: 36rpx;
+}
+.font-20{
+  font-size: 40rpx;
+}
+.padding-l-r-5{
+  padding:0 10rpx;
+}
+.padding-l-r-10{
+  padding:0 20rpx;
+}
+.padding-l-r-15{
+  padding:0 30rpx;
+}
+.padding-l-r-20{
+  padding:0 40rpx;
+}
+.padding-5{
+  padding: 10rpx 0;
+}
+.padding-10{
+  padding: 20rpx 0;
+}
+.padding-15{
+  padding: 30rpx 0;
+}
+.padding-20{
+  padding: 40rpx 0;
+}

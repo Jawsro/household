@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 用户登录后显示 开始-->
+  <view class="login-btn font-weight-600 font-18" bindtap="goLogin">
+    <text>注册/登录</text>
+  </view>
+  <view class="classification">
+    <view class="classification-item" wx:for="{{classification}}" wx:key='index'>
+      <view class="classification-item-img iconfont {{item.icon}}"></view>
+      <view class="classification-item-text font-16">{{item.text}}</view>
+    </view>
+  </view>
+  <view class="grid">
+    <view class="grid-item" wx:for="{{grid}}" wx:key='index'>
+      <view class="grid-item-img iconfont {{item.url}}"></view>
+      <view class="grid-item-text font-14">{{item.text}}</view>
+    </view>
+  </view>
+  <!-- 结束 -->
+  <view class="swiper">
+    <swiper
+        indicator-dots="{{indicatorDots}}" 
+        autoplay="{{autoplay}}" 
+        circular="{{circular}}" 
+        vertical="{{vertical}}"
+        interval="{{interval}}" 
+        duration="{{duration}}" 
+        indicator-active-color="{{indicatorActiveColor}}"
+       
+       >
+        <block >
+          <swiper-item>
+           <image src="../../images/timg.jpg" mode='widthFix'></image>
+          </swiper-item>
+           <swiper-item>
+           <image src="../../images/2.jpg" mode='widthFix'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+  <view class="module padding-l-r-15">
+    <view class="item right">
+      <image src="../../images/timg.jpg" mode='widthFix'></image>
+    </view>
+    <view class="item ">
+      <image src="../../images/timg.jpg" mode='widthFix'></image>
+    </view>
+    <view class="item right">
+      <image src="../../images/timg.jpg" mode='widthFix'></image>
+    </view>
+    <view class="item ">
+      <image src="../../images/timg.jpg" mode='widthFix'></image>
+    </view>
+  </view>
+  <view class="community padding-l-r-15">
+    <view class="font-weight-600 font-20 padding-15">
+      <text>社区动态</text>
+    </view>
+     <view class="news">
+
+      <view class="list">
+        <view>
+          <image src="../../images/2.jpg" mode='widthFix'></image>
+        </view>
+        <view class="text font-16 font-weight-500">
+          <text>选出您身边最美的工作人员</text>
+        </view>
+      </view>
+
+      <view class="list">
+        <view>
+          <image src="../../images/2.jpg" mode='widthFix'></image>
+        </view>
+        <view class="text font-16 font-weight-500">
+          <text>选出您身边最美的工作人员</text>
+        </view>
+      </view>
+
+     </view>
+  </view>
+</view>

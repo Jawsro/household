@@ -1,0 +1,44 @@
+<view class="container" >
+  <image src="../../images/bg.png"></image>
+  <!--登录方式选择 -->
+  <view class="userinfo" hidden='{{phoneLoginIsShow}}'>
+     <button open-type="getUserInfo" 
+      bindgetuserinfo="getUserInfo"
+      class="wx-button font-16"
+      style="width:100%"
+      >
+      微信用户一键登录</button>
+      <view class="phone-login font-16" bindtap="phoneLogin">
+        <text>手机号码登录/注册</text>
+      </view>
+  </view>
+  <!-- 手机登录注册 -->
+  <view class="phone" hidden='{{!phoneLoginIsShow}}'>
+    <view class="box">
+      <view class="phone-box">
+        <view class="phone-num">
+          <input class="weui-input font-16" auto-focus placeholder="请输入手机号"/>
+        </view>
+        <view class="code">
+          <input class="weui-input font-16" auto-focus placeholder="请输入验证码"/>
+          <view class="get-code font-12">
+            <view bindtap="getCode" hidden="{{getCodeIsShow}}">{{codeText}}</view>
+            <view hidden="{{!getCodeIsShow}}">{{secondCode}}秒后重新发送</view>
+          </view>
+        </view>
+        <button 
+          class="wx-button font-16"
+          style="width:100%"
+          class="phone-login-btn font-18"
+        >
+          登 录
+        </button>
+        <view class="warn font-14">若输入的手机号未注册，系统将自动帮您注册</view>
+      </view>
+      <view class="close" bindtap="close">
+        <image src="../../images/close.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+

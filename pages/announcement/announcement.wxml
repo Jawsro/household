@@ -1,0 +1,43 @@
+<view class='container'>
+  <view class="information">
+    <view class="title">
+      <view class="img">
+        <image src="../../images/timg.jpg" mode='widthFix'></image>
+      </view>
+      <view class="text font-16">
+        <text>#本小区于本月15号起开通线上缴费功能开通线上缴费功能</text>
+      </view>
+      <view class="more">
+        <text class="iconfont icon-gengduo "></text>
+      </view>
+    </view>
+
+    <view class="main">
+    <view class="main-title ">
+      <view class="left font-18 font-weight-600">
+        <text>精选资讯</text>
+      </view>
+      <view class="main-more">
+        <text>更多</text> <text class="iconfont icon-gengduo "></text>
+      </view>
+    </view>
+    <view class="news">
+      <view class="news-list">
+        <view class="news-list-left ">
+          <view class="news-title font-14">
+            <text>#小区福利#凡本月预存下月物业费前10名奖励食用油一桶！</text>
+          </view>
+          <view class="time font-12">
+            <text class="date">2020-01-01</text>
+            <text>1小时前</text>
+          </view>
+        </view>
+        <view class="news-list-right">
+           <image src="../../images/timg.jpg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  </view>  
+</view>
