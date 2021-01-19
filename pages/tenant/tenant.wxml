@@ -1,0 +1,99 @@
+<view class="container">
+  <view class="main">
+    <form bindsubmit="setData">
+      <view class="input-msg">
+        <view class="left-name">
+          <text class="iconfont icon-required margin-right" style="color:red"></text>
+          <text class="font-16 font-weight-500">真实姓名</text>
+        </view>
+        <view class="input">
+          <input placeholder="请输入真实姓名" class="font-15" name="name" style="color:#B7B7B7"></input>
+        </view>
+      </view>
+      <view class="input-msg">
+        <view class="left-name">
+          <text class="iconfont icon-required margin-right" style="color:red"></text>
+          <text class="font-16 font-weight-500">身份证号</text>
+        </view>
+        <view class="input">
+          <input placeholder="请输入16位身份证号" class="font-15" name="userID" style="color:#B7B7B7"></input>
+        </view>
+      </view>
+      <view class="input-msg">
+        <view class="left-name">
+          <text class="iconfont icon-required margin-right" style="color:red"></text>
+          <text class="font-16 font-weight-500">楼栋房号</text>
+        </view>
+        <view class="input">
+          <input placeholder="请输入完整的住宅信息" class="font-15" name="floor" style="color:#B7B7B7"></input>
+        </view>
+      </view>
+      <view class="input-msg">
+        <view class="left-name">
+          <text class="iconfont icon-required margin-right" style="color:red"></text>
+          <text class="font-16 font-weight-500">业主信息</text>
+        </view>
+        <view class="input">
+          <input placeholder="请输入业主真实姓名" class="font-15" name="owner" style="color:#B7B7B7"></input>
+        </view>
+      </view>
+      <view class="input-msg">
+        <view class="left-name">
+          <text class="font-16 font-weight-500" style="margin-left:37rpx">车位信息</text>
+        </view>
+        <view class="input">
+          <input placeholder="请输入车位信息" class="font-15" name="carmsg" style="color:#B7B7B7"></input>
+        </view>
+      </view>
+      <view class="input-msg">
+        <view class="left-name">
+          <text class="font-16 font-weight-500" style="margin-left:37rpx">车牌号码</text>
+        </view>
+        <view class="input">
+          <input placeholder="请输入完整的车牌号" class="font-15" name="carnum" style="color:#B7B7B7"></input>
+        </view>
+      </view>
+      <view class="input-msg">
+        <view class="left-name">
+          <text class="iconfont icon-required margin-right" style="color:red"></text>
+          <text class="font-16 font-weight-500">联系电话</text>
+        </view>
+        <view class="input">
+          <input placeholder="请输入联系电话" class="font-15" name="phone" style="color:#B7B7B7"></input>
+        </view>
+      </view>
+      <view class="pic">
+        <view class="title font-weight-500 font-18">上传身份证照片</view>
+        <view class="pic-chose">
+          <view class="pic-left">
+            <view class="image" bindtap="chose_pic_before">
+              <image src="https://caixianshengshop.shangyouyun.cn/uploads/default/mentou.jpg" hidden="{{idbeforeImg != ''}}">
+              </image>
+              <image src='{{idbeforeImg}}' hidden="{{idbeforeImg == ''}}"></image>
+              <input  name="idbefore" value=""></input>
+            </view>
+            <view class="text">身份证正面</view>
+            <!--  -->
+          </view>
+          <view class="pic-right">
+            <view class="image" bindtap="chose_pic_after">
+               <image src="../../images/1.png" hidden="{{idAfterImg != ''}}">
+              </image>
+              <image src='{{idAfterImg}}' hidden="{{idAfterImg == ''}}"></image>
+              <input  name="idAfter" value=""></input>
+            </view>
+            <view class="text">身份证反面</view>
+          </view>
+        </view>
+      </view>
+      <view class="zhuyi">
+        <text class="iconfont icon-zhuyi margin-right icon" style="color:#FFB109"></text>
+        <text class="zhuyi-text font-12" style="color:#9B9A98">证件必须是清晰彩色原件电子版本。可以是扫描件或者数码拍摄照片。仅支持jpg、 png、 jpeg的图片格式。
+        </text>
+      </view>
+      <button class="form-btn font-14" formType="submit" style=" width: 90%;">确认提交</button>
+    </form>
+  </view>
+</view>
+
+<view class="container-no"></view>

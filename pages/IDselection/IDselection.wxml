@@ -1,0 +1,20 @@
+<view class="container">
+  <view>
+    <image src="../../images/bg3.png" mode="widthFix"></image>
+  </view>
+  <view class="main">
+    <view class="owner all-style" wx:for="{{idArray}}" wx:key='index' 
+    style="background:url('../../images/bg1.png') center center no-repeat;background-size: cover">
+      <view class="text" >
+        <view class="left">
+          <text class="font-weight-600 font-20">我是{{item.text}}</text>
+        </view>
+        <navigator class="right font-16" url="{{item.url}}">
+          <text class="margin-right">去认证</text>
+          <text class="iconfont icon-gengduo"></text>
+        </navigator>
+      </view>
+    </view>
+    
+  </view>
+</view>

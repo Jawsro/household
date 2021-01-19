@@ -1,0 +1,33 @@
+.container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main{
+  position: absolute;
+  top:474rpx;
+  left: 30rpx;
+  right: 30rpx;
+}
+.all-style{
+  margin-bottom: 20rpx;
+  height: 172rpx;
+}
+
+.text{
+  color: #894231;
+  display: flex;
+  padding: 60rpx 60rpx 60rpx 80rpx;
+  align-items: center;
+  border-radius: 20rpx;
+}
+.left{
+  flex: 1;
+  text-align: left;
+}
+.right{
+  flex: 1;
+  text-align: right;
+}

@@ -1,0 +1,23 @@
+<view class="container">
+  <scroll-view class="main" scroll-y>
+    <view class="item">
+      <view class="image">
+        <image src="../../images/b.jpg" ></image>
+      </view>
+      <view class="middle">
+        <view class="house-name font-16 font-weight-500">
+          <text>盛公馆</text>
+        </view>
+        <view class="floor font-12">
+          <text>1号楼/2单元/1-3001</text>
+        </view>
+      </view>
+      <view class="right">
+        <navigator class="right-btn" url="">
+          <text class="margin-right">去缴费</text>
+          <text class="iconfont icon-gengduo"></text>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+</view>

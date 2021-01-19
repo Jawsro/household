@@ -1,0 +1,59 @@
+.container{
+  padding:0 30rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main{
+  height: 100%;
+}
+.item{
+  background-color: #fff;
+  margin:60rpx 0 ;
+  border-radius: 20rpx;
+  position: relative;
+  padding: 60rpx 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width: 180rpx;
+  height: 220rpx;
+  position: absolute;
+  top: -30rpx;
+  left: 20rpx;
+}
+.image image{
+  border-radius: 20rpx;
+  height: 100%;
+}
+.middle{
+  margin-left: 215rpx;
+  flex: 1;
+  margin-right: 40rpx;
+}
+.house-name{
+  border-bottom: 1px solid #CDCDCD;
+  color: #474747;
+  padding-bottom: 20rpx;
+}
+.floor{
+  padding-top: 20rpx;
+  color:#797979;
+}
+.right{
+  flex: 0 0 160rpx;
+  width: 160rpx;
+  margin-right: 20rpx;
+  
+}
+.right-btn{
+  background-color: #7F3E2F;
+  color: #fff;
+  padding:20rpx 10rpx;
+  
+}
