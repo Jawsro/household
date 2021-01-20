@@ -1,0 +1,20 @@
+ <swiper-component>
+ 
+ <swiper
+        indicator-dots="{{indicatorDots}}" 
+        autoplay="{{autoplay}}" 
+        circular="{{circular}}" 
+        vertical="{{vertical}}"
+        interval="{{interval}}" 
+        duration="{{duration}}" 
+        indicator-active-color="{{indicatorActiveColor}}"
+       
+       >
+        <block >
+          <swiper-item wx:for="{{swiperImg}}" wx:key='index'>
+           <image src="{{item}}" mode='widthFix'></image>
+          </swiper-item>
+          
+        </block>
+      </swiper>
+ </swiper-component>
