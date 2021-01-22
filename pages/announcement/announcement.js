@@ -5,9 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    zanIsShow:false,
+    zanNum:66,
+    swiperImg:["../../images/timg.jpg","../../images/gonggao.jpg"],
   },
-
+  dianzan(){
+    this.zanIsShow =! this.zanIsShow;
+    console.log(this.data.zanNum)
+    let num = this.data.zanNum;
+    if(!this.zanIsShow){
+      //取消点赞
+      //请求后台取消成功修改数据
+      this.setData({
+        zanIsShow:false,
+        zanNum:num-1
+      })
+    }else{
+      //点赞
+      //请求后台点赞成功修改数据
+      this.setData({
+        zanIsShow:true,
+        zanNum:num+1
+      })
+    }
+    
+  },
   /**
    * 生命周期函数--监听页面加载
    */

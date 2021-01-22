@@ -1,10 +1,18 @@
 <!--index.wxml-->
 <view class="container">
-  <!-- 用户登录后显示 开始-->
-  <view class="login-btn font-weight-600 font-18" bindtap="goLogin">
-    <text>注册/登录</text>
+ <view class="top">
+   <view class="top-img">
+    <image src="../../images/bg4.jpg" mode="widthFix"></image>
   </view>
-  <view class="classification">
+  <view class="img2">
+    <image src="../../images/buzhidao.png" mode="widthFix"></image>
+    <view class="login-btn font-weight-500 font-16" bindtap="goLogin">
+      <text>注册/登录</text>
+    </view>
+  </view>
+ </view>
+  <!-- 用户登录后显示 开始-->
+ <view class="classification margin-top" hidden="true">
     <navigator 
       class="classification-item" 
       wx:for="{{classification}}" 
@@ -13,47 +21,30 @@
       <view class="classification-item-img iconfont {{item.icon}}"></view>
       <view class="classification-item-text font-16">{{item.text}}</view>
     </navigator>
-  </view>
-  <view class="grid">
-    <view class="grid-item" wx:for="{{grid}}" wx:key='index'>
-      <view class="grid-item-img iconfont {{item.url}}"></view>
-      <view class="grid-item-text font-14">{{item.text}}</view>
+ 
+    <view class="grid">
+      <view class="grid-item" wx:for="{{grid}}" wx:key='index'>
+        <view class="grid-item-img iconfont {{item.url}}"></view>
+        <view class="grid-item-text font-14">{{item.text}}</view>
+      </view>
     </view>
   </view>
   <!-- 结束 -->
   <view class="swiper">
-    <swiper
-        indicator-dots="{{indicatorDots}}" 
-        autoplay="{{autoplay}}" 
-        circular="{{circular}}" 
-        vertical="{{vertical}}"
-        interval="{{interval}}" 
-        duration="{{duration}}" 
-        indicator-active-color="{{indicatorActiveColor}}"
-       
-       >
-        <block >
-          <swiper-item>
-           <image src="../../images/timg.jpg" mode='widthFix'></image>
-          </swiper-item>
-           <swiper-item>
-           <image src="../../images/2.jpg" mode='widthFix'></image>
-          </swiper-item>
-        </block>
-      </swiper>
+    <swipers swiper-img="{{swiperImg}}"></swipers>  
   </view>
   <view class="module padding-l-r-15">
+    <navigator class="item right" >
+      <image src="../../images/fenlei1.png" mode='widthFix'></image>
+    </navigator>
+    <navigator class="item " url="../announcement/announcement">
+      <image src="../../images/fenlei2.png" mode='widthFix'></image>
+    </navigator>
     <view class="item right">
-      <image src="../../images/timg.jpg" mode='widthFix'></image>
+      <image src="../../images/fenlei3.png" mode='widthFix'></image>
     </view>
     <view class="item ">
-      <image src="../../images/timg.jpg" mode='widthFix'></image>
-    </view>
-    <view class="item right">
-      <image src="../../images/timg.jpg" mode='widthFix'></image>
-    </view>
-    <view class="item ">
-      <image src="../../images/timg.jpg" mode='widthFix'></image>
+      <image src="../../images/fenlei4.png" mode='widthFix'></image>
     </view>
   </view>
   <view class="community padding-l-r-15">
@@ -64,7 +55,7 @@
 
       <view class="list">
         <view>
-          <image src="../../images/2.jpg" mode='widthFix'></image>
+          <image src="../../images/timg.jpg" mode='widthFix'></image>
         </view>
         <view class="text font-16 font-weight-500">
           <text>选出您身边最美的工作人员</text>
@@ -73,7 +64,7 @@
 
       <view class="list">
         <view>
-          <image src="../../images/2.jpg" mode='widthFix'></image>
+          <image src="../../images/timg.jpg" mode='widthFix'></image>
         </view>
         <view class="text font-16 font-weight-500">
           <text>选出您身边最美的工作人员</text>

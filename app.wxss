@@ -16,3 +16,12 @@ image{
   width:100%;
   display: block;
 }
+.nocolor{
+  color:#A6A6A7;
+}
+.iscolor{
+  color:#FD526C ;
+}
+.margin-right{
+  margin-right: 10rpx;
+}

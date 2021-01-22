@@ -1,4 +1,5 @@
 {
-  "navigationBarTitleText": "物业缴费",
-  "usingComponents": {}
+  "usingComponents": {
+    "header":"../../components/title/title"
+  }
 }

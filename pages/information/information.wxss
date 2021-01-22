@@ -1,10 +1,11 @@
-/* .container{
-  padding: 40rpx 30rpx;
-} */
+.container{
+  /* margin-top: 120rpx; */
+}
 .article{
   background-color: #fff;
   margin-bottom: 20rpx;
   padding: 40rpx 30rpx;
+  margin-top: 150rpx;
 }
 .mag{
   display: flex;
@@ -18,9 +19,7 @@
   flex: 1;
   text-align: right;
 }
-.margin-right{
-  margin-right: 10rpx;
-}
+
 .author{
   padding:30rpx 0;
 }
@@ -45,12 +44,7 @@
 .icon{
   font-size: 60rpx;
 }
-.nocolor{
-  color:#A6A6A7;
-}
-.iscolor{
-  color:#FD526C ;
-}
+
 .zan-text{
   padding-top: 20rpx;
 }

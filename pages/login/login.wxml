@@ -1,5 +1,6 @@
-<view class="container" >
-  <image src="../../images/bg.png"></image>
+<view class="container" style="background:url('../../images/bg.jpg') center center no-repeat;background-size: 100% 100%">
+  <!-- 组件引入 -->
+  <header  my-property="登录"></header> 
   <!--登录方式选择 -->
   <view class="userinfo" hidden='{{phoneLoginIsShow}}'>
      <button open-type="getUserInfo" 
@@ -23,7 +24,7 @@
           <input class="weui-input font-16" auto-focus placeholder="请输入验证码"/>
           <view class="get-code font-12">
             <view bindtap="getCode" hidden="{{getCodeIsShow}}">{{codeText}}</view>
-            <view hidden="{{!getCodeIsShow}}">{{secondCode}}秒后重新发送</view>
+            <view hidden="{{!getCodeIsShow}}">{{secondCode}}秒后重发</view>
           </view>
         </view>
         <button 
@@ -36,7 +37,8 @@
         <view class="warn font-14">若输入的手机号未注册，系统将自动帮您注册</view>
       </view>
       <view class="close" bindtap="close">
-        <image src="../../images/close.png"></image>
+        <!-- <image src="../../images/close.png"></image> -->
+        <text class="iconfont icon-close-o" style="color:#fff;font-size:80rpx"></text>
       </view>
     </view>
   </view>

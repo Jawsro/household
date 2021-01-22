@@ -38,7 +38,7 @@ Page({
       }
     })
   },
-  chose_pic_after(){
+  chose_pic_after(t){
     let _this=this,
     curPic = t.target;
   wx.chooseImage({

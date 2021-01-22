@@ -10,6 +10,9 @@
 .font-14{
   font-size: 28rpx;
 }
+.font-15{
+  font-size: 30rpx;
+}
 .font-16{
   font-size: 32rpx;
 }

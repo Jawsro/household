@@ -1,4 +1,5 @@
 { 
-  "navigationBarTitleText": "实名认证",
-  "usingComponents": {}
+  "usingComponents": {
+    "header":"../../components/title/title"
+  }
 }

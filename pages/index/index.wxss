@@ -1,11 +1,23 @@
 .container{
   padding-bottom: 40rpx;
 }
+.top{
+  position: relative;
+}
+.img2{
+  position: absolute;
+  top: 164rpx;
+  left: 30rpx;
+  right: 30rpx;
+}
 .login-btn{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
   border-radius: 50rpx;
   border: 1px solid #591814;
   padding:20rpx 0;
-  width:280rpx;
+  width:206rpx;
   text-align: center;
   color: #591814;
 }
@@ -16,6 +28,7 @@
   align-items: center;
   flex-wrap:wrap;
   background: linear-gradient(to bottom, #E9D8D0 0%,#DEC7B9 50%,#D9BDAD 100%);
+  z-index: 9;
 }
 .classification-item{
   width: 25%;

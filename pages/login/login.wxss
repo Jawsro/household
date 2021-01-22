@@ -43,7 +43,7 @@ image{
 .box{
   position:absolute; 
   left:50%; 
-  top:50%;
+  top:62%;
   transform:translate(-50%,-50%);
 }
 .phone-box{
@@ -59,7 +59,8 @@ image{
 }
 .phone-num,.code{
   border-bottom: 1px solid #A9A9A9;
-  padding:30rpx 0
+  padding:30rpx 0;
+  
 }
 .weui-input{
   padding:10rpx 0;

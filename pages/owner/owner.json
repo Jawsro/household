@@ -1,4 +1,5 @@
 { 
-  "navigationBarTitleText": "业主认证",
-  "usingComponents": {}
+  "usingComponents": {
+    "header":"../../components/title/title"
+  }
 }

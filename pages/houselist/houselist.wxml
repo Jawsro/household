@@ -13,7 +13,7 @@
         </view>
       </view>
       <view class="right">
-        <navigator class="right-btn" url="">
+        <navigator class="right-btn" url="../propertyPayment/propertyPayment">
           <text class="margin-right">去缴费</text>
           <text class="iconfont icon-gengduo"></text>
         </navigator>

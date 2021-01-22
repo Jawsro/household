@@ -1,1 +1,142 @@
-/* pages/my/my.wxss */
+.container{
+  padding-bottom: 30rpx;
+}
+.top{
+  position: relative;
+  background: linear-gradient(to right, #C9A590 0%,#D9BFB1 50%,#EBDDD5 100%);
+}
+.img2{
+  position: absolute;
+  top: 164rpx;
+  left: 30rpx;
+  right: 30rpx;
+}
+.login-btn{
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+  border-radius: 50rpx;
+  border: 1px solid #591814;
+  padding:20rpx 0;
+  width:206rpx;
+  text-align: center;
+  color: #591814;
+}
+.user-msg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:150rpx;
+  width: 100%;
+}
+.wx-title{
+  letter-spacing:2rpx
+}
+.head-img{
+  flex:0 0 120rpx;
+  width: 120rpx;
+  height: 120rpx;
+  margin:0 20px;
+}
+.user-text{
+  flex: 1;
+}
+.user-name{
+  color: #000;
+}
+.grade{
+  border: 1rpx solid #833833;
+  border-radius: 40rpx;
+  color: #833833;
+  padding: 5rpx 0rpx;
+  margin-top: 16rpx;
+  width: 130rpx;
+  text-align: center;
+}
+.erweima{
+  position: absolute;
+  bottom: 0;
+  right: 80rpx;
+}
+.img{
+  height:60rpx ;
+  position: absolute;
+  top:400rpx ;
+  width: 100%;
+}
+.img image
+{
+  height: 100%;
+}
+.img-vip{
+  position: absolute;
+  bottom:-60rpx;
+  z-index: 9;
+  left: 20rpx;
+  right: 20rpx;
+}
+.text{
+  color: #894231;
+  display: flex;
+  padding: 0rpx 60rpx 0rpx 80rpx;
+  align-items: center;
+  border-radius: 20rpx;
+  margin: 60rpx 0;
+}
+.left{
+  flex: 1;
+  text-align: left;
+}
+.right{
+  flex:0 0 180rpx;
+  width: 180rpx;
+  background-color: #894231;
+  color: #fff;
+  border-radius: 40rpx;
+  padding: 10rpx 0;
+  text-align: center;
+}
+.main{
+  margin: 90rpx 30rpx 0 30rpx;
+}
+.wallet{
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding:0 20rpx ;
+  
+}
+.wallet-title{
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wallet-title-left{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.wallet-title-right{
+  flex: 1;
+  text-align: right;
+}
+.functions{
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding:0 20rpx ;
+  margin: 30rpx 0rpx;
+}
+.functions-item{
+  display: flex;
+  align-items: center;
+  padding: 40rpx 0;
+  border-bottom: 1rpx solid #F5F5F5;
+}
+.functions-item-left{
+  flex: 1;
+}
+.functions-item-right{
+  flex: 2;
+  text-align: right;
+}

@@ -1,4 +1,7 @@
 <!--pages/shop/shop.wxml-->
 <view class="container">
-<view class="text">该功能尚未开放</view>
+  <view style="background: linear-gradient(to bottom, #EBDDD5 0%,#D9BFB1 50%,#C9A590 100%);height:150rpx;position:fixed;top:0;left:0;right:0" ></view>
+  <!-- 组件引入 -->
+  <header  my-property="优选"></header> 
+  <view class="text">该功能尚未开放</view>
 </view>

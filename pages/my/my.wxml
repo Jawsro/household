@@ -1,43 +1,107 @@
-<view class="container" >
-  <image src="../../images/bg.png"></image>
-  <!--登录方式选择 -->
-  <view class="userinfo" hidden='{{phoneLoginIsShow}}'>
-     <button open-type="getUserInfo" 
-      bindgetuserinfo="getUserInfo"
-      class="wx-button font-16"
-      style="width:100%"
-      >
-      微信用户一键登录</button>
-      <view class="phone-login font-16" bindtap="phoneLogin">
-        <text>手机号码登录/注册</text>
+<view class="container">
+  <view class="top" wx:if='{{loginStatue}}'>
+    <view class="top-img">
+      <image src="../../images/bg4.jpg" mode="widthFix"></image>
+    </view>
+    <view class="img2">
+      <image src="../../images/buzhidao.png" mode="widthFix"></image>
+      <view class="login-btn font-weight-500 font-16" bindtap="goLogin">
+        <text>注册/登录</text>
       </view>
+    </view>
   </view>
-  <!-- 手机登录注册 -->
-  <view class="phone" hidden='{{!phoneLoginIsShow}}'>
-    <view class="box">
-      <view class="phone-box">
-        <view class="phone-num">
-          <input class="weui-input font-16" auto-focus placeholder="请输入手机号"/>
-        </view>
-        <view class="code">
-          <input class="weui-input font-16" auto-focus placeholder="请输入验证码"/>
-          <view class="get-code font-12">
-            <view bindtap="getCode" hidden="{{getCodeIsShow}}">{{codeText}}</view>
-            <view hidden="{{!getCodeIsShow}}">{{secondCode}}秒后重新发送</view>
-          </view>
-        </view>
-        <button 
-          class="wx-button font-16"
-          style="width:100%"
-          class="phone-login-btn font-18"
-        >
-          登 录
-        </button>
-        <view class="warn font-14">若输入的手机号未注册，系统将自动帮您注册</view>
+  <view class="top" style="height:400rpx" wx:if='{{!loginStatue}}'>
+    <view class="top-title" style="height:{{height}}px;position:fixed;top:{{top}}px;left:20px;right:0;color:#833833;font-weight:600;display:flex;justify-content: center;align-items: center;z-index:10">
+      <view style="flex:0 0 110rpx;" class="font-18 font-weight-500">
+        我的
       </view>
-      <view class="close" bindtap="close">
-        <image src="../../images/close.png"></image>
+      <view class="wx-title font-14" style="flex:1">
+        |筑造美好生活
       </view>
+    </view>
+    <view class="user-msg">
+      <view class="head-img">
+        <text class="iconfont icon-touxiang" style="color:#C7C7C7;font-size:60px"></text>
+      </view>
+      <view class="user-text">
+        <view class="user-name font-20  font-weight-500">李先生</view>
+        <view class="grade font-12">普通用户</view>
+      </view>
+      <view class="erweima">
+        <text class="iconfont icon-ico" style="color: #894231;font-size:80rpx"></text>
+      </view>
+    </view>
+    <view class="img-vip" style="background:url('../../images/bg1.png') center center no-repeat;background-size: cover">
+       <view class="text" >
+        <view class="left">
+          <text class="font-weight-600 font-20" style="margin-right:20rpx">VIP</text>
+          <text class="font-26">开启业主特权生活</text>
+        </view>
+        <navigator class="right font-14" url="">
+          <text>立即认证</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="img">
+      <image src="../../images/doudou.png"></image>
+    </view>
+  </view>
+
+  <view class="main">
+    <!-- 钱包 -->
+    <view class="wallet">
+      <view class="wallet-title">
+        <view class="wallet-title-left">
+          <text class="font-18 font-weight-500" style="margin-right:40rpx">我的钱包</text>
+          <text class="iconfont icon-chakan" style="font-size:55rpx;color:#000;"></text>
+        </view>
+        <view class="wallet-title-right">
+          <text class="font-18 font-weight-500" style="margin-right:40rpx"></text>
+          <text class="iconfont icon-gengduo" style="font-size:40rpx;color:#000;"></text>
+        </view>
+      </view>
+    </view>
+    <view class="functions">
+      <!--房屋信息  -->
+      <navigator class="functions-item" url=''>
+        <view class="functions-item-left">
+          <text>我的房屋信息</text>
+        </view>
+        <view class="functions-item-right">
+          <text class="right-text margin-right font-14" style="color:#DDB39E">认证业主受更多福利</text>
+          <text class="iconfont icon-gengduo" style="color:#A6A6A6"></text>
+        </view>
+      </navigator>
+      <!-- 商铺 -->
+      <navigator class="functions-item" url="{{ authenticationStatus ?'../houselist/houselist':'../IDselection/IDselection'}}">
+        <view class="functions-item-left">
+          <text>我的商铺</text>
+        </view>
+        <view class="functions-item-right">
+          <!-- <text class="right-text margin-right font-14" style="color:#DDB39E">认证业主受更多福利</text> -->
+          <text class="iconfont icon-gengduo" style="color:#A6A6A6"></text>
+        </view>
+      </navigator>
+      <!-- 车位 -->
+      <navigator class="functions-item" url="{{ authenticationStatus ?'../houselist/houselist':'../IDselection/IDselection'}}">
+        <view class="functions-item-left">
+          <text>我的车位</text>
+        </view>
+        <view class="functions-item-right">
+          <!-- <text class="right-text margin-right font-14" style="color:#DDB39E">认证业主受更多福利</text> -->
+          <text class="iconfont icon-gengduo" style="color:#A6A6A6"></text>
+        </view>
+      </navigator>
+       <!-- 汽车 -->
+      <navigator class="functions-item" url="{{ authenticationStatus ?'../houselist/houselist':'../IDselection/IDselection'}}">
+        <view class="functions-item-left">
+          <text>我的汽车</text>
+        </view>
+        <view class="functions-item-right">
+          <!-- <text class="right-text margin-right font-14" style="color:#DDB39E">认证业主受更多福利</text> -->
+          <text class="iconfont icon-gengduo" style="color:#A6A6A6"></text>
+        </view>
+      </navigator>
     </view>
   </view>
 </view>

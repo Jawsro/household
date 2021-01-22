@@ -12,8 +12,12 @@ Page({
     getCodeIsShow:false,
     secondCode:60,
     codeText:"获取验证码",
-    phoneLoginIsDisabled:true
+    phoneLoginIsDisabled:true,
+    height:0,
+    top:0
   },
+  
+
   // 事件处理函数
   phoneLogin(){
     this.setData({
@@ -54,6 +58,7 @@ Page({
     })
   },
   onLoad() {
+   
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

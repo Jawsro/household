@@ -1,2 +1,107 @@
-<!--pages/propertyPayment/propertyPayment.wxml-->
-<text>pages/propertyPayment/propertyPayment.wxml</text>
+<view class="container">
+  <view style="background: linear-gradient(to bottom, #EBDDD5 0%,#D9BFB1 50%,#C9A590 100%);height:150rpx;position:fixed;top:0;left:0;right:0" ></view>
+  <!-- 组件引入 -->
+  <header  my-property="物业缴费"></header> 
+  <view class="main">
+    <view class="owner-msg">
+      <view class="owner-msg-title">
+        <view class="owner-msg-title-left">
+          <text>待缴费</text>
+        </view>
+        <navigator 
+          class="owner-msg-title-right" 
+          url="../propertyPaymentRecord/propertyPaymentRecord">
+           <text>缴费记录</text>
+        </navigator>
+      </view>
+      <view class="payment">
+        <view class="payment-item">
+          <view class="item-left">
+            <text>房号：</text>
+          </view>
+          <view class="item-right">
+            <text>盛公馆/1号楼/2单元/1-3001</text>
+          </view>
+        </view>
+         <view class="payment-item">
+          <view class="item-left">
+            <text>住户：</text>
+          </view>
+          <view class="item-right">
+            <text>李鹏</text>
+          </view>
+        </view>
+        <view class="payment-item">
+          <view class="item-left">
+            <text>账户余额：</text>
+          </view>
+          <view class="item-right" style="color:#F9964E">
+            <text>0</text>
+          </view>
+        </view>
+        <view class="payment-item" style="border:none">
+          <view class="item-left">
+            <text>截止计费日期：</text>
+          </view>
+          <view class="item-right">
+            <text>2020-11-30</text>
+            <text class="iconfont icon-riqi" style="color: #7F3E2F;font-size:48rpx;"></text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+     <view class="payment-msg">
+      <view class="payment-msg-title">
+        <text>缴费明细</text>
+      </view>
+      <view class="payment-main">
+        <view class="payment-item">
+          <view class="payment-item-left">
+            <text>物业管理费</text>
+          </view>
+          <view class="payment-item-right">
+            <text class="margin-right">￥188.88</text>
+            <text class="iconfont icon-gengduo"></text>
+          </view>
+        </view>
+        <view class="payment-item">
+          <view class="payment-item-left">
+            <text>垃圾处理费</text>
+          </view>
+          <view class="payment-item-right">
+            <text class="margin-right">￥188.88</text>
+            <text class="iconfont icon-gengduo"></text>
+          </view>
+        </view>
+        <view class="payment-item">
+          <view class="payment-item-left">
+            <text>公摊水费</text>
+          </view>
+          <view class="payment-item-right">
+            <text class="margin-right">￥188.88</text>
+            <text class="iconfont icon-gengduo"></text>
+          </view>
+        </view>
+        <view class="payment-item">
+          <view class="payment-item-left">
+            <text>水费</text>
+          </view>
+          <view class="payment-item-right">
+            <text class="margin-right">￥188.88</text>
+            <text class="iconfont icon-gengduo "></text>
+          </view>
+        </view>
+         <view class="payment-item">
+          <view class="payment-item-left">
+            <text>公摊电费</text>
+          </view>
+          <view class="payment-item-right">
+            <text class="margin-right">￥188.88</text>
+            <text class="iconfont icon-gengduo "></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

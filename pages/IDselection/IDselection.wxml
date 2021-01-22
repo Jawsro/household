@@ -1,4 +1,6 @@
 <view class="container">
+  <!-- 组件引入 -->
+  <header  my-property="实名认证"></header> 
   <view>
     <image src="../../images/bg3.png" mode="widthFix"></image>
   </view>

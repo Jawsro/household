@@ -15,6 +15,7 @@ Page({
     duration: 500,
     indicatorDots: true,
     indicatorActiveColor: "white",
+    swiperImg:["../../images/timg.jpg","../../images/gonggao.jpg"],
     grid:[
       {
         url:"icon-shuifeiguanli",
@@ -53,7 +54,7 @@ Page({
       {
         icon:"icon-wuyefeiyongchuzhang",
         text:"物业缴费",
-        url:"../announcement/announcement"
+        url:"../houselist/houselist"
       },
       {
         icon:"icon-gonggao",

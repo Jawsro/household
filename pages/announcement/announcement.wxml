@@ -1,9 +1,15 @@
 <view class='container'>
+   <view style="background: linear-gradient(to bottom, #EBDDD5 0%,#D9BFB1 50%,#C9A590 100%);height:360rpx;position:fixed;top:0;left:0;right:0"></view>
+   <view style="position:fixed;top:150rpx;left:30rpx;right:30rpx;height:200rpx;z-index:9" >
+    <swipers swiper-img="{{swiperImg}}"></swipers> 
+   </view>
+   <!-- 组件引入 -->
+    <header  my-property="社区公告" ></header> 
   <!-- 精彩资讯 -->
-  <view class="information">
+  <view class="information" style="margin-top:457rpx">
     <view class="title">
       <view class="img">
-        <image src="../../images/timg.jpg" mode='widthFix'></image>
+        <image src="../../images/laba.png" mode='widthFix'></image>
       </view>
       <view class="text font-16">
         <text>#本小区于本月15号起开通线上缴费功能开通线上缴费功能</text>
@@ -14,7 +20,7 @@
     </view>
     <view class="main">
       <view class="main-title ">
-        <view class="left font-18 font-weight-600">
+        <view class="left font-16 font-weight-600">
           <text>精选资讯</text>
         </view>
         <view class="main-more">
@@ -55,7 +61,7 @@
 
         <view class="user-msg">
           <view class="user-img">
-            <image src="../../images/timg.jpg" ></image>
+            <text class="iconfont icon-touxiang" style="color:#C9CACA;font-size:90rpx;"></text>
           </view>
           <view class="user-name">
             <view class="name font-16">楼上老李子</view>
@@ -77,10 +83,11 @@
               <text>1小时前</text>
             </view>
             <view class="right ">
-              <text class="iconfont icon-aixin_shixin" 
-                  style='color:#E95342;margin-right:10rpx;font-size:16px'>
+              <text class="iconfont  {{zanIsShow ? 'icon-aixin_shixin' : 'icon-aixin'}} {{zanIsShow ? 'iscolor' : 'nocolor'}}" 
+                  style='margin-right:10rpx;font-size:16px'
+                  bindtap="dianzan">
               </text>
-              <text style="color:#443C38; margin-right:60rpx" class="font-14">2</text>
+              <text style="color:#443C38; margin-right:60rpx" class="font-14">{{zanNum}}</text>
           
                 <text class="iconfont icon-pinglun " 
                   style='color:#393939;margin-right:10rpx;font-size:14px'>

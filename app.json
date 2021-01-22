@@ -1,18 +1,30 @@
 {
   "pages":[
-    
-    "pages/index/index","pages/announcement/announcement",
+    "pages/propertyPayment/propertyPayment",
+    "pages/announcement/announcement",
+    "pages/information/information",
+    "pages/IDselection/IDselection",
+    "pages/propertyPaymentRecord/propertyPaymentRecord",
+    "pages/my/my",
+    "pages/owner/owner", 
+    "pages/index/index", 
+    "pages/tenant/tenant",
+    "pages/family/family",
     "pages/login/login",
+    
+    "pages/houselist/houselist",
+    
     "pages/services/services",
-    "pages/shop/shop",
-    "pages/my/my"
+    "pages/shop/shop"
+    
     
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "color": "#828282",

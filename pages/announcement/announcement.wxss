@@ -1,3 +1,6 @@
+.container{
+  padding-top: 20rpx;
+}
 .information,.message-board{
   background: #fff;
   border-radius: 20rpx;
@@ -82,7 +85,8 @@
 .user-img{
   width: 110rpx;
   height: 110rpx;
-  margin-right: 20rpx;
+  margin-right: 10rpx;
+  line-height: 110rpx;
 }
 .user-img image{
   height: 100%;

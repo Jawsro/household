@@ -1,5 +1,5 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "精彩资讯",
-  "navigationBarBackgroundColor": "#D9BDAD"
+  "usingComponents": {
+    "header":"../../components/title/title"
+  }
 }
