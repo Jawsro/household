@@ -11,7 +11,7 @@
         <view class="left">
           <text class="font-weight-600 font-20">我是{{item.text}}</text>
         </view>
-        <navigator class="right font-16" url="{{item.url}}">
+        <navigator class="right font-16" url="{{item.url}}?identity={{item.identity}}">
           <text class="margin-right">去认证</text>
           <text class="iconfont icon-gengduo"></text>
         </navigator>

@@ -1,12 +1,12 @@
 {
   "pages":[
+    "pages/IDselection/IDselection",
+    "pages/owner/owner", 
     "pages/propertyPayment/propertyPayment",
     "pages/announcement/announcement",
     "pages/information/information",
-    "pages/IDselection/IDselection",
     "pages/propertyPaymentRecord/propertyPaymentRecord",
     "pages/my/my",
-    "pages/owner/owner", 
     "pages/index/index", 
     "pages/tenant/tenant",
     "pages/family/family",

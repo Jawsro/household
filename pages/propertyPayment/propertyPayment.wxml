@@ -3,6 +3,7 @@
   <!-- 组件引入 -->
   <header  my-property="物业缴费"></header> 
   <view class="main">
+    <!--  待缴费-->
     <view class="owner-msg">
       <view class="owner-msg-title">
         <view class="owner-msg-title-left">
@@ -50,8 +51,8 @@
         </view>
       </view>
     </view>
-
-     <view class="payment-msg">
+    <!-- 缴费明细 -->
+    <view class="payment-msg">
       <view class="payment-msg-title">
         <text>缴费明细</text>
       </view>
@@ -100,6 +101,43 @@
             <text class="margin-right">￥188.88</text>
             <text class="iconfont icon-gengduo "></text>
           </view>
+        </view>
+      </view>
+    </view>
+    <!-- 积分抵现 -->
+    <view class="jifen">
+      <view class="jifen-title">
+        <view class="jifen-title-left">
+          <text>积分抵现</text>
+        </view>
+        <view class="jifen-title-right">
+          <text style="margin-right:20rpx">积分</text>
+          <text style="color:#000">139</text>
+        </view>
+      </view>
+      <view class="jifen-main">
+        <view class="jifen-main-left font-12">
+          <text class="iconfont icon-qian margin-right" style="color: #7F3E2F;font-size:40rpx"></text>
+          <text class="margin-right">使用</text>
+          <input placeholder="可使用139积分"></input>
+          <text class="margin-right">分</text>
+          <text style="color:#000" class="font-weight-500 ">使用全部</text>
+        </view>
+        <view class="jifen-main-right font-weight-500 font-12">
+          <text style="margin-right:20rpx">可抵扣</text>
+          <text>￥139.00</text>
+        </view>
+      </view>
+    </view>
+    <!-- 立即缴费 -->
+    <view class="jiaofei-botom">
+      <view class="jiaofei-botom-main">
+        <view class="jiaofei-botom-main-left">
+            <text>应缴合计：</text>
+            <text style="color:#F9964E">￥2295.6</text>
+        </view>
+        <view class="jiaofei-botom-main-right">
+          <button style="background:#7F3E2F; width: 260rpx;">立即缴费</button>
         </view>
       </view>
     </view>

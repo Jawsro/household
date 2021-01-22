@@ -15,7 +15,7 @@ Component({
         height: bar.height,	// 标题栏高度与胶囊 高度相同，适用于透明标题栏。
         top	// 标题栏top。如果标题栏高度比胶囊大，设置为 top - (navigationHeight - bar.height)/2
     })
-    console.log(top,bar.height)
+    // console.log(top,bar.height)
   },
  
   methods:{

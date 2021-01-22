@@ -6,9 +6,9 @@ Page({
    */
   data: {
     idArray:[
-      {text:"业主",url:"../owner/owner"},
-      {text:"家属",url:"../family/family"},
-      {text:"租客",url:"../tenant/tenant"},
+      {text:"业主",url:"../owner/owner",identity:"owner"},
+      {text:"家属",url:"../family/family",identity:"family"},
+      {text:"租客",url:"../tenant/tenant",identity:"tenant"},
     ]
   },
 

@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "租客认证",
-  "usingComponents": {}
+  "usingComponents": {
+    "header":"../../components/title/title",
+    "ertificationForm":"../../components/ertificationForm/ertificationForm"
+  }
 }

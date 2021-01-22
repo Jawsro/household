@@ -4,75 +4,78 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    idbeforeImg:'',
-    idAfterImg:''
-  },
+  // data: {
+  //   idbeforeImg:'',
+  //   idAfterImg:''
+  // },
   /**
    * 上传图片
    */
-  chose_pic_before: function (t){
-    let _this=this,
-      curPic = t.target;
-    wx.chooseImage({
-      sizeType: ['original', 'compressed'],
-      success(res) {
-        const tempFilePaths = res.tempFilePaths
-        console.log(tempFilePaths,)
-        wx.uploadFile({
-          // url: app.globalData.site_url+'index.php?s=/api/upload/image&wxapp_id=10001',
-          filePath: tempFilePaths[0],
-          name: 'file',
-          formData: {
-            'user': 'test'
-          },
-          success(res) {
-            const data = JSON.parse(res.data);
-            let url = data.image_url;
-            // if(data.status&&url){
-            //   _this.setData({
-            //     mendian_url: app.globalData.site_url + url 
+  // chose_pic_before: function (t){
+  //   let _this=this,
+  //     curPic = t.target;
+  //   wx.chooseImage({
+  //     sizeType: ['original', 'compressed'],
+  //     success(res) {
+  //       const tempFilePaths = res.tempFilePaths
+  //       console.log(tempFilePaths,)
+  //       wx.uploadFile({
+  //         // url: app.globalData.site_url+'index.php?s=/api/upload/image&wxapp_id=10001',
+  //         filePath: tempFilePaths[0],
+  //         name: 'file',
+  //         formData: {
+  //           'user': 'test'
+  //         },
+  //         success(res) {
+  //           const data = JSON.parse(res.data);
+  //           let url = data.image_url;
+  //           // if(data.status&&url){
+  //           //   _this.setData({
+  //           //     mendian_url: app.globalData.site_url + url 
             
-          }
-        })
-      }
-    })
-  },
-  chose_pic_after(){
-    let _this=this,
-    curPic = t.target;
-  wx.chooseImage({
-    sizeType: ['original', 'compressed'],
-    success(res) {
-      const tempFilePaths = res.tempFilePaths
-      console.log(tempFilePaths,)
-      wx.uploadFile({
-        // url: app.globalData.site_url+'index.php?s=/api/upload/image&wxapp_id=10001',
-        filePath: tempFilePaths[0],
-        name: 'file',
-        formData: {
-          'user': 'test'
-        },
-        success(res) {
-          const data = JSON.parse(res.data);
-          let url = data.image_url;
-          // if(data.status&&url){
-          //   _this.setData({
-          //     mendian_url: app.globalData.site_url + url 
+  //         }
+  //       })
+  //     }
+  //   })
+  // },
+  // chose_pic_after(){
+  //   let _this=this,
+  //   curPic = t.target;
+  //   wx.chooseImage({
+  //   sizeType: ['original', 'compressed'],
+  //   success(res) {
+  //     const tempFilePaths = res.tempFilePaths
+  //     console.log(tempFilePaths,)
+  //     wx.uploadFile({
+  //       // url: app.globalData.site_url+'index.php?s=/api/upload/image&wxapp_id=10001',
+  //       filePath: tempFilePaths[0],
+  //       name: 'file',
+  //       formData: {
+  //         'user': 'test'
+  //       },
+  //       success(res) {
+  //         const data = JSON.parse(res.data);
+  //         let url = data.image_url;
+  //         // if(data.status&&url){
+  //         //   _this.setData({
+  //         //     mendian_url: app.globalData.site_url + url 
           
-        }
-      })
-    }
-  })
-  },
-  setData(e){
-    console.log(e)
-  },
+  //       }
+  //     })
+  //   }
+  // })
+  // },
+  // setData(e){
+  //   console.log(e)
+  // },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      identity: options.identity
+    })
+    console.log(options)
   },
 
   /**

@@ -4,10 +4,13 @@
 .main{
   margin-top: 160rpx;
 }
-.owner-msg,.payment-msg{
+.owner-msg,.payment-msg,.jifen,.jiaofei-botom{
   background-color: #fff;
   padding: 30rpx 20rpx 0 20rpx;
   margin-bottom: 20rpx;
+}
+.jiaofei-botom{
+  margin-bottom: 0rpx;
 }
 .owner-msg-title{
   display: flex;
@@ -22,14 +25,12 @@
 }
 .payment-item{
   display: flex;
-  /* overflow: hidden; */
   border-bottom: 1rpx solid #8D8D8D;
   padding: 30rpx 0;
   line-height: 56rpx;
 }
 .item-left{
   flex: 1;
-  /* float: left; */
   color: #8D8D8D;
 }
 .item-right{
@@ -37,8 +38,6 @@
   text-align: left;
   color: #474747;
   display: flex;
-  /* float: right;
-  text-align: left; */
 }
 .item-right text{
   flex: 1;
@@ -64,4 +63,53 @@
 }
 .payment-item-right .icon-gengduo{
   color: #8D8D8D;
+}
+.jifen-title{
+  display: flex;
+  color: #9B9B9B;
+}
+.jifen-title-right{
+  flex: 1;
+  text-align: right;
+}
+.jifen-title-left{
+  flex: 1;
+}
+.jifen-main{
+  display: flex;
+  padding: 30rpx 0;
+  align-items: center;
+  justify-content: center;
+}
+.jifen-main-left{
+  flex: 2;
+  color: #8D8D8D;
+  display: flex; align-items: center;
+  justify-content: center;
+}
+.jifen-main-left input{
+  width:200rpx;
+  text-align: center;
+}
+.jifen-main-right{
+  flex: 1;
+  text-align: right;
+}
+.jiaofei-botom-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60rpx;
+}
+.jiaofei-botom-main-left{
+  flex: 1;
+}
+.jiaofei-botom-main-right{
+  flex: 1;
+  text-align: right;
+}
+.jiaofei-botom-main-right button{
+  border-radius: 40rpx;
+  color: #fff;
+ 
 }
