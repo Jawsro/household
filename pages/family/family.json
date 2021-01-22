@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "家属认证",
-  "usingComponents": {}
+  "usingComponents": {
+    "header":"../../components/title/title",
+    "ertificationForm":"../../components/ertificationForm/ertificationForm"
+  }
 }

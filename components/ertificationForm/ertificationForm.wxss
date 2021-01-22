@@ -1,3 +1,4 @@
+@import "../../utils/iconfont.wxss";
 .ertification-form{
   position: relative;
 }

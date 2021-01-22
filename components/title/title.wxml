@@ -1,6 +1,6 @@
 <title-component style="height:{{height}}px;position:fixed;top:{{top}}px;left:20px;right:0;color:#833833;font-weight:600;display:flex;justify-content: center;align-items: center;z-index:10">
   <view style="flex:1;" bindtap="goback">
-    <image src="../../images/back-top.png" style="height:18px;width:18px"></image>
+    <text class="iconfont icon-fanhui-copy" style="font-size:40rpx;font-weight:700;"></text>
   </view>
   <view class="wx-title" style="flex:2;text-align:left">
     {{myProperty}}
