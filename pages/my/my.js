@@ -21,8 +21,7 @@ Page({
           loginStatue:true
         })
       }
-    } catch (e) {
-    }
+    } catch (e) {}
     
   },
   attached() { 

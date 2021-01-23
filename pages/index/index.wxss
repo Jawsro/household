@@ -21,8 +21,52 @@
   text-align: center;
   color: #591814;
 }
+.user-msg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:162rpx;
+  width: 100%;
+}
+.xiaoqu{
+  position: absolute;
+  left: 80rpx;
+  z-index:10;
+  
+}
+.xiaoqu-name{
+  color: #1D212D;
+  font-weight: 600;
+  letter-spacing: 2rpx;
+}
+.xiaoqu-floor{
+  color: #1C222D;
+  padding: 10rpx 0;
+}
+.erweima{
+  position: absolute;
+  right: 80rpx;
+  z-index:10
+}
+.doudou-img{
+  position: absolute;
+  bottom: 0rpx;
+  width: 100%;
+  height:60rpx ;z-index: 3;
+}
+.doudou-img image{
+  height: 100%;
+}
+.bgcolor{
+  position: absolute;
+  bottom: -64rpx;
+  width: 100%;
+  height:126rpx ;
+  background-color: #E9D8D0;
+}
 .classification{
-  padding:50rpx 0;
+  padding:24rpx 0 50rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -53,7 +97,8 @@
   flex-direction: row;
   align-items: center;
   flex-wrap:wrap;
-  padding:30rpx 0
+  padding:30rpx 0;
+  width: 100%;
 }
 .grid-item{
   width: 25%;

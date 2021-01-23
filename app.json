@@ -1,23 +1,19 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/IDselection/IDselection",
     "pages/owner/owner", 
     "pages/propertyPayment/propertyPayment",
     "pages/announcement/announcement",
     "pages/information/information",
     "pages/propertyPaymentRecord/propertyPaymentRecord",
-    "pages/my/my",
-    "pages/index/index", 
+    "pages/my/my", 
     "pages/tenant/tenant",
     "pages/family/family",
     "pages/login/login",
-    
     "pages/houselist/houselist",
-    
     "pages/services/services",
     "pages/shop/shop"
-    
-    
   ],
   "window":{
     "backgroundTextStyle":"light",

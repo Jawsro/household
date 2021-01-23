@@ -37,10 +37,10 @@ Page({
         url:"icon-fuli",
         text:"业主福利"
       },
-      {
-        url:"icon-qiandao",
-        text:"签到积分"
-      },
+      // {
+      //   url:"icon-qiandao",
+      //   text:"签到积分"
+      // },
       {
         url:"icon-fuwu",
         text:"便民服务"
@@ -71,7 +71,8 @@ Page({
         text:"访客通行",
         url:"../announcement/announcement"
       }
-    ]
+    ],
+    loginIsshow:false
   },
   goLogin(){
     wx.navigateTo({
@@ -82,7 +83,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let _this = this;
+    try {
+      //let loginStatue = wx.getStorageSync('key');
+       let loginStatue = 1;
+      if (!loginStatue) {
+       _this.setData({
+        loginIsshow:true
+       })
+       console.log(1111)
+      }else{
+        _this.setData({
+          loginIsshow:false
+        })
+      }
+    } catch (e) {}
   },
 
   /**

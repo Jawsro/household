@@ -37,7 +37,7 @@
           <text class="font-weight-600 font-20" style="margin-right:20rpx">VIP</text>
           <text class="font-26">开启业主特权生活</text>
         </view>
-        <navigator class="right font-14" url="">
+        <navigator class="right font-14" url="../IDselection/IDselection">
           <text>立即认证</text>
         </navigator>
       </view>
